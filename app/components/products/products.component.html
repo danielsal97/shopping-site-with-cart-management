@@ -1,0 +1,22 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<div class="container" style="padding-top: 15%;">
+
+  <div class="row" id="filteredItems">
+    <ng-container *ngFor="let item of productList ">
+      <div class="col-md-3">
+        <mat-card class="shadow-sm p-3 mb-5 bg-white rounded" style="height: 400px">
+          <img mat-card-image src="{{ item.image }}" alt="" style="height: 200px; object-fit: contain" />
+          <mat-card-content>
+            <h5 mat-line>{{ item.title }}</h5>
+            <p mat-line>{{ item.description }}</p>
+            <p mat-line style="color: green"><strong>${{ item.price }}</strong></p>
+          </mat-card-content>
+          <mat-card-actions class="d-flex justify-content-center">
+            <button mat-button color="white" style="background-color: rgb(41, 109, 158)" (click)="addToCart(item)">Add to cart</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </ng-container>
+  </div>
+</div>

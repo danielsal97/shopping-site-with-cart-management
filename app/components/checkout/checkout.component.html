@@ -1,0 +1,75 @@
+<h1 class="my-4" >Checkout</h1>
+<div class="row">
+  <div class="col-md-8">
+    <h3 class="mb-3">Billing Information: </h3>
+    <form>
+      <div class="mb-3">
+        <label for="Name">Name: </label>
+        <input type="email" [(ngModel)]="checkout.Name" name="name">
+      </div>
+      <div class="mb-3">
+        <label for="email">Email: </label>
+        <input type="email" [(ngModel)]="checkout.email" name="email">
+      </div>
+      <div class="mb-3">
+        <label for="phone">Phone: </label>
+        <input [(ngModel)]="checkout.phone" name="phone">
+      </div>
+      <div class="mb-3">
+        <label for="address">Address: </label>
+        <input name="address" [(ngModel)]="checkout.address">
+      </div>
+      <div class="mb-3">
+        <label for="address2">Address 2:  <span class="text-muted">(Optional)</span></label>
+        <input name="address2" [(ngModel)]="checkout.address2">
+      </div>
+        <div class="col-md-5 mb-3">
+          <label for="country">Country: </label>
+          <input name="country" [(ngModel)]="checkout.country">
+
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="state">State: </label>
+          <input name="state" [(ngModel)]="checkout.state">
+
+
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="zip">Zip: </label>
+          <input name="zip" [(ngModel)]="checkout.zip">
+        </div>
+      <hr class="mb-4">
+      <h3 class="mb-3">Payment Information: </h3>
+      <div class="mb-3">
+        <label for="cardName">Name on card: </label>
+        <input name="cardName" [(ngModel)]="checkout.cardName">
+      </div>
+      <div class="mb-3">
+        <label for="cardNumber">Credit card number: </label>
+        <input name="cardNumber" [(ngModel)]="checkout.cardNumber">
+      </div>
+      <div class="mb-3">
+        <label for="expMonth">Expiration Month: </label>
+        <input name="cardNumber" [(ngModel)]="checkout.expMonth">
+      </div>
+      <div class="mb-3">
+        <label for="expYear">Expiration Year: </label>
+        <input name="cardNumber" [(ngModel)]="checkout.expYear">
+      </div>
+      <div class="mb-3">
+        <label for="cvv">CVV: </label>
+        <input name="cardNumber" [(ngModel)]="checkout.cvv">
+      </div>
+
+
+
+      <div class="d-flex justify-content-between" style="padding-top: 10%; padding-bottom: 15%;">
+        <button class="btn btn-primary btn-lg" (click)="placeOrder()" type="submit">Place Order</button>
+        <button class="btn btn-primary btn-lg" routerLink="/cart" type="submit">Back to Cart</button>
+      </div>
+
+
+        </form>
+          </div>
+
+        </div>
