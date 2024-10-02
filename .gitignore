@@ -1,0 +1,26 @@
+# Ignore Angular related directories
+.angular/
+.firebase/
+app/
+assets/
+dist/
+environments/
+src/
+
+# Ignore specific files
+.firebaserc
+angular.json
+favicon.ico
+firebase.json
+index.html
+main.ts
+package-lock.json
+package.json
+README.md
+styles.css
+tsconfig.app.json
+tsconfig.json
+tsconfig.spec.json
+
+# Ignore node_modules
+node_modules/
