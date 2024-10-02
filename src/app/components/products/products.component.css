@@ -1,0 +1,71 @@
+
+h5, p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100ch;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  transition: 0.3s ease-in-out;
+}
+
+img:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .mat-card {
+    width: 280px;
+  }
+}
+button.mat-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+@media (max-width: 767px) {
+  .mat-card {
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+  .col-md-3 {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    padding-top: 15%;
+  }
+}
+
+@media (max-width: 1300px) {
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+  .col-md-3 {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+  }
+  mat-card-image {
+    width: 55%;
+    height: 55%;
+  }
+
+}

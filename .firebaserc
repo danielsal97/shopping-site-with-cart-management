@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "production": "web-project-2f0f4"
+  },
+  "targets": {
+    "web-project-2f0f4": {
+      "hosting": {
+        "finalCourseProject": [
+          "web-project-2f0f4"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
