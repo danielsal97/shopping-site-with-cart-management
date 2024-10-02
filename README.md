@@ -1,27 +1,50 @@
-# FinalCourseProject
+# Shopping Site with Cart Management
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+This project is a shopping site with cart management features built using Angular and Firebase. The code base includes several components, services, and models to handle shopping cart functionality, user login, product display, and more.
 
-## Development server
+## Project Setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Prerequisites
 
-## Code scaffolding
+Before running the project, make sure you have the following installed:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Node.js](https://nodejs.org/) (at least v14.0.0)
+- [Angular CLI](https://angular.io/cli) (at least v12.0.0)
+- [Firebase CLI](https://firebase.google.com/docs/cli)
 
-## Build
+### Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/danielsal97/shopping-site-with-cart-management.git
+    cd shopping-site-with-cart-management
+    ```
 
-## Running unit tests
+2. **Install dependencies:**
+    Install the project dependencies using npm.
+    ```bash
+    npm install
+    ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. **Run the development server:**
+    To serve the Angular app on your local machine, run:
+    ```bash
+    ng serve -o
+    ```
 
-## Running end-to-end tests
+    This command will automatically open the project in your default browser. By default, it will run on `http://localhost:4200`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+4. **Build the project:**
+    To build the project for production, run:
+    ```bash
+    ng build
+    ```
 
-## Further help
+5. **Firebase Configuration:**
+    The project uses Firebase for authentication and database. Make sure to configure Firebase correctly in the `firebase.json` and `src/environments/environment.ts` files.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+6. **Deploy to Firebase:**
+    To deploy the project to Firebase Hosting, run:
+    ```bash
+    firebase deploy
+    ```
